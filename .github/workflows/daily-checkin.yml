@@ -5,8 +5,6 @@ on:
     # GitHub Actions 使用 UTC 时间，UTC 01:17 = 北京时间每天 09:17
     # 定时任务在高峰期可能延迟几分钟到几十分钟，属正常现象
     - cron: '17 1 * * *'
-  # 临时触发器：用于本次验证，验证后会移除
-  push: {}
   # 允许在 Actions 页面手动点 "Run workflow" 立即测试
   workflow_dispatch:
 
